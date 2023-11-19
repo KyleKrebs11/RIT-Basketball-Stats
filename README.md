@@ -1,4 +1,4 @@
 # RIT_Basketball_Stats
-@authors: Kyle Krebs, Nick Creeley, Testing
+@authors: Kyle Krebs, Nick Creeley
 
 Checking for new branch
