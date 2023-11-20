@@ -1,0 +1,45 @@
+What I want to achieve:
+    I want to build a program that can allow me to input a certain defense,
+    then output a lineup substitution pattern that plays the most efficently 
+    against it. Creating offensive and defensive grades for specific lineups. 
+
+Offensive:
+
+    Individual Stats:
+        - How often team scores from (Level 1,2,3) against man with this player on the court vs off
+        - Team Field Goal % against man with this player on the court (Level 1,2,3) vs off
+
+        - How often team scores from (Level 1,2,3) in transition with this player on the court vs off
+        - Team Field Goal % in transition with this player on the court (Level 1,2,3) vs off
+
+        - How often team scores from (Level 1,2,3) against zone with this player on the court vs off
+        - Team Field Goal % against zone with this player on the court (Level 1,2,3) vs off
+
+        - How often team scores from (Level 1,2,3) when running a certain play with this player on the court vs off
+        - Team Success % running this play with this player on the court (Level 1,2,3) vs off       - 
+
+        - Compare every individuals differential with some sort of visual.
+
+    Player Conditional Stats:
+        - Given a player, check the individual stats above (player1)
+            > Give another player (player2), see what player1's stats were with player2 on vs off the court
+                > Give every player1's on vs off differential (on - off) w/ that certain player2
+                > Whoever has the highest differential can be inferred to be most influenced by that player2
+                > Whoever has the lowest may also show negative relationships between players that maybe shouldn't be on the court at the same time
+                > Think of WHY these two might have a high correlation
+
+            > Do the same thing as above but with 2 players instead of 1.
+
+    Lineup Stats:
+        - Given 5 players, compare all these stats to just see what specific lineups are the most efficient against certain defenses
+
+
+
+
+General:
+
+
+
+
+
+Defensive:
