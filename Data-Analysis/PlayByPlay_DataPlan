@@ -1,0 +1,293 @@
+Kyle Krebs & Nick Creeley
+Play by Play Data Manipulation
+
+
+* Every play either ends with Miss / Make *
+* Check if each Miss / Make was a 3 or 2 *
+* Every "No Dribble Jumper" should check for Open / Guarded even if it doesn't specify it *
+
+
+Spot ups
+* Drives Right
+    * To Basket
+    * Dribble Jumper
+* Drives Left
+    * To Basket
+    * Dribble Jumper
+* Drives Straight
+    * To Basket
+    * Dribble Jumper
+* No Dribble Jumper (Catch and Shoot)
+    * Open
+    * Guarded
+
+
+
+
+Cuts
+* Basket (Cuts towards basket)
+    * Make / Miss
+    * Foul
+    * Turnover
+* Screen (Cuts towards basket from off ball screen)
+    * Make / Miss
+    * Foul
+    * Turnover
+* Flash (Player flashes to open space)
+    * Make / Miss
+    * Foul
+    * Turnover
+
+
+
+
+Pick N Rolls
+* Left P&R (Screener screens BH right side)
+    * Side (Screen comes on sideline)
+        * Dribble Off Screen
+            * To Basket
+            * Dribble Jumper
+        * Go Away from Pick
+            * To Basket
+            * Dribble Jumper
+    * Dribble Off Screen
+        * To Basket
+        * Dribble Jumper
+    * Go Away from Pick
+        * To Basket
+      * Dribble Jumper
+* Right P&R (Screener screen BH left side)
+    * Side (Screen comes on sideline)
+        * Dribble Off Screen
+            * To Basket
+            * Dribble Jumper
+        * Go Away from Pick
+            * To Basket
+            * Dribble Jumper
+    * Dribble Off Screen
+        * To Basket
+        * Dribble Jumper
+    * Go Away from Pick
+        * To Basket
+      * Dribble Jumper
+* High P&R
+    * Side (Screen comes on sideline)
+        * Dribble Off Screen
+            * To Basket
+            * Dribble Jumper
+        * Go Away from Pick
+            * To Basket
+            * Dribble Jumper
+    * Dribble Off Screen
+        * To Basket
+        * Dribble Jumper
+    * Go Away from Pick
+        * To Basket
+        * Dribble Jumper
+
+
+
+
+Transition
+* Ball Handler (BH keeps ball)
+    * Dribble Jumper
+    * To Basket
+    * Turnover
+* Left Wing (BH passes to left wing)
+    * No Dribble Jumper
+    * Dribble Jumper
+    * To Basket
+    * Turnover
+* Right Wing (BH passes to right wing)
+    * No Dribble Jumper
+    * Dribble Jumper
+    * To Basket
+    * Turnover
+* Trailer (BH hits trail man)
+    * No Dribble Jumper
+    * Dribble Jumper
+    * To Basket
+    * Turnover
+* Leak Outs (BH hits outlet ahead)
+    * No Dribble Jumper
+    * Dribble Jumper
+    * To Basket
+    * Turnover
+* First Middle (Rim Runner gets passed to from BH)
+    * No Dribble Jumper
+    * Dribble Jumper
+    * To Basket
+    * Turnover
+
+
+
+
+Off Screens
+* To Shooters Left
+    * Straight
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+    * Flare
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+    * Curl
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+* To Shooters Right
+    * Straight
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+    * Flare
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+    * Curl
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+
+
+
+
+Miscellaneous Plays (plays that don’t develop)
+* Turnover
+* To Basket
+* Dribble Jumper
+* No Dribble Jumper
+* Foul
+
+
+
+
+Iso
+* Top
+    * Dribble Jumper
+    * No Dribble Jumper
+    * To Basket
+    * Defense Commits
+        * Foul
+        * Turnover
+* Right
+    * Dribble Jumper
+    * No Dribble Jumper
+    * To Basket
+    * Defense Commits
+        * Foul
+        * Turnover
+* Left
+    * Dribble Jumper
+    * No Dribble Jumper
+    * To Basket
+    * Defense Commits
+        * Foul
+        * Turnover
+
+
+
+
+Hand Offs
+* From Dribble
+    * Top
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+    * Left
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+    * Right
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+* From Stationary
+    * Top
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+    * Left
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+    * Right
+        * No Dribble Jumper
+        * Dribble Jumper
+        * To Basket
+        * Turnover
+
+
+
+
+Post Ups
+* Right Block
+    * Face Up
+        * Jumper
+        * Drive Middle
+        * Drive Right
+        * Drive Left
+    * Dribble Move
+        * To Jumper
+        * To Hook
+        * To Basket
+        * To Drop Step
+        * Defense Commits
+            * Foul
+            * Turnover
+* Left Block
+    * Face Up
+        * Jumper
+        * Drive Middle
+        * Drive Right
+        * Drive Left
+    * Dribble Move
+        * To Jumper
+        * To Hook
+        * To Basket
+        * To Drop Step
+        * Defense Commits
+            * Foul
+            * Turnover
+* Flash Middle
+    * Face Up
+        * Jumper
+        * Drive Middle
+        * Drive Right
+        * Drive Left
+    * Dribble Move
+        * To Jumper
+        * To Hook
+        * To Basket
+        * To Drop Step
+        * Defense Commits
+            * Foul
+            * Turnover
+
+
+
+
+P&R Roll Man
+* Pick and Pops
+    * No Dribble Jumper
+    * Drives Left
+        * To Basket
+        * Turnover
+    * Drives Right
+        * To Basket
+        * Turnover
+* Rolls to the Basket
+    * Make / miss
+    * Turnover
