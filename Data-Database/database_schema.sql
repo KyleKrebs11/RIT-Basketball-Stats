@@ -14,7 +14,7 @@ CREATE DATABASE IF NOT EXISTS basketball_stats;
 USE basketball_stats;
 
 -- create the play description table
-CREATE TABLE PlayDescriptions (
+CREATE TABLE playdescriptions (
     PlayID INT PRIMARY KEY AUTO_INCREMENT,
     PlayType VARCHAR(50),
     Direction VARCHAR(50) NULL,
@@ -22,22 +22,22 @@ CREATE TABLE PlayDescriptions (
 );
 
 -- create the shot type table
-CREATE TABLE ShotTypes (
+CREATE TABLE shottypes (
     ShotType VARCHAR(50) PRIMARY KEY
 ); 
 
 -- create the play outcomes table
-CREATE Table PlayOutcomes (
+CREATE Table playoutcomes (
     Outcome VARCHAR(50) PRIMARY KEY
 );
 
 -- create the opponents table
-CREATE TABLE Opponents (
+CREATE TABLE opponents (
     Opponent VARCHAR(50) PRIMARY KEY
 );
 
 -- create the main table that will hold all plays
-CREATE TABLE Plays (
+CREATE TABLE plays (
     PlayID INT,
     ShotType VARCHAR(50),
     Outcome VARCHAR(50),
