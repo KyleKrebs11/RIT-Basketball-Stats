@@ -13,9 +13,9 @@ Rough Plan (Jan 14)…
 	Create query putting all information needed into one csv
 	Throw CSV into Data-Analysis folder (github)
 
-    Create program that collects and manipulates data from CSV
-    Answer questions, find efficiency ratings, compare to rest of Liberty League
-    Create visualizations and make reports
+    	Create program that collects and manipulates data from CSV
+	Answer questions, find efficiency ratings, compare to rest of Liberty League
+	Create visualizations and make reports
 
 
 Data Manipulation Questions
