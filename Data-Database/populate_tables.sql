@@ -51,8 +51,7 @@ INSERT INTO opponents (Opponent) VALUES
   ('Clarkson'),
   ('St. Lawrence');
 
--- populate playdescriptions next 
-
+-- populate playdescriptions
 INSERT INTO playdescriptions (PlayType, Direction, Play_Action) VALUES
   -- Spot Ups 
   ('Spot Ups', 'Left','Drive'),
