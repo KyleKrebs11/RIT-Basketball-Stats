@@ -1,142 +1,36 @@
-FINAL GOAL:
-    I want to build a program that can allow me to input a certain defense,
-    then output a lineup substitution pattern that plays the most efficently 
-    against it. Creating offensive and defensive grades for specific lineups. 
+Nick Creeley 
+Kyle Krebs
+
+Rough Plan (Jan 14)…
+
+	Each game will be a “ View “
+	Consisting of a table of  “ Plays “
+	Goes through row values of CSV in SQL file
+	Grab information needed and populate each play in the “ view “
+	Once every play in the game is accounted for…
+	Save that view into database
+
+	Create query putting all information needed into one csv
+	Throw CSV into Data-Analysis folder (github)
+
+    	Create program that collects and manipulates data from CSV
+	Answer questions, find efficiency ratings, compare to rest of Liberty League
+	Create visualizations and make reports
 
 
-----------------------------------------------------------------------------------------------------------------
-WHY WE TRACK EACH STATISTIC:
+Data Manipulation Questions
 
-*NOTE*......Every stat that is tracked will be grouped by what specific lineup is on that floor. 
+	What type of play and action does a team run the most vs least? 
+        How successful are they?
+        Where are they taking the most vs least shots from?
+	        What’s their percentages per type of shot?
+        How does this compare to the rest of the Liberty League?
+        Give order of who they played best to worst against offensively.
 
-- WHY: An often overlooked part of one's individual performance is the teammates they are surrounded by on the court. So 
-if we can break down what players best compliment each other on the court. We can formulate more efficient substitutions 
-patterns allowing the team to be put in the best possible situation in order to win.
-
-- If the most efficient substitution patterns are already being implemented, this information can (worst case scenario) 
-give reassurance to a system that is already in place.
-
-
-General Lineup Stats: 
-    - The stats listed below are more precise versions of the stats you can see in the box score. 
-    - WHY: It shows the full picture of what’s going on for specific stats. For example, if we are looking at defensive rebounds, the box score may say that Brock Bowen ended with only 3 rebounds. At first glance, you see that and think maybe Brock just had an average game on the boards, didn’t do much to hurt or help. However, tracking lineups can tell a different tale. I can see that when Brock was on the floor, the team’s rebounding differential was +10. So this may lead us to believe that although Brock may not be actually getting rebounds himself, he may be one who consistently boxes out and clears out space for other people to get rebounds.
-    - With this information, you can look at scouting reports and if you see that a team  is extremely strong on the boards, maybe giving Brock more minutes for this game would be a good idea.
-
-    Stats Tracked
-    -------------
-    - Minutes
-    - Points Forwarded
-    - Points Allowed
-    - Turnovers
-    - Turnovers Allowed
-    - Defensive Rebounds
-    - Defensive Rebounds Allowed
-    - Offensive Rebounds
-    - Offensive Rebounds Allowed
-
-
-Offensive Play by Play Stats:
-    - These stats give you information on what plays are the most efficient.
-    - WHY: With having around 75-85 possessions a game, it is difficult to keep track in one's mind of which plays were 
-    actually the most successful. Sometimes it’s blatantly obvious but other times not so much. Having direct numbers 
-    on which plays were the most successful can allow for reassurance on plays that you are calling at certain times 
-    within a game. Not to mention because I am also tracking these stats with lineups, we can get a better idea of which 
-    players run certain plays the best. Giving another source of reassurance of which plays to call when you have certain 
-    people on the floor.
-
-    Stats Tracked
-    -------------
-    - Level 1,2,3 Scores vs Man
-    - Level 1,2,3 Attempts vs Man
-    - Transition Level 1,2,3 Scores
-    - Transition Level 1,2,3 Scores
-    - Level 1,2,3 Scores vs Zone
-    - Level 1,2,3 Attempts vs Zone
-    - Level 1,2,3 Scores off “Play 1”
-    - Possessions Running “Play 1”
-
-
-Defensive Play by Play Stats:
-    - These stats give you information on what defenses with certain players are the most efficient. 
-    - WHY: These defensive play by play stats go hand in hand with the offensive play stats. The purpose of tracking these 
-    stats is to get a better understanding of where the strongest part of your defense lies. Tracking where on the court 
-    opposing teams score vs certain defenses gives numbers to back up a defensive system. Breaking down which lineups 
-    that are the weakest / strongest against certain types of shots could help create a game plan of what players you 
-    should play more or less depending on the strength of the opposing team.
-    
-    Stats Tracked
-    -------------
-    - Level 1,2,3 Scores vs Man
-    - Level 1,2,3 Attempts vs Man
-    - Transition Level 1,2,3 Scores
-    - Transition Level 1,2,3 Scores
-    - Level 1,2,3 Scores vs Zone
-    - Level 1,2,3 Attempts vs Zone
-
-
-
-----------------------------------------------------------------------------------------------------------------
-
-General Stats Analyzed:
-
-    - Offensive Rebound differential with player on vs off the court
-    - Offensive Rebounds Allowed differential with player on vs off the court
-    
-    - Defensive Rebound differential with player on vs off the court
-    - Defensive Rebounds Allowed differential with player on vs off the court
-
-    - Turnover differential with player on vs off the court
-    - Turnovers Forced differential with player on vs off the court
-    
-    - Point differential with player on vs off the court
-    - Points Allowed differential with player on vs off the court
-
-
-Offensive Stats Analyzed:
-
-    - How often team scores from (Level 1,2,3) against man with this player on the court vs off
-    - Team Field Goal % against man with this player on the court (Level 1,2,3) vs off
-
-    - How often team scores from (Level 1,2,3) in transition with this player on the court vs off
-    - Team Field Goal % in transition with this player on the court (Level 1,2,3) vs off
-
-    - How often team scores from (Level 1,2,3) against zone with this player on the court vs off
-    - Team Field Goal % against zone with this player on the court (Level 1,2,3) vs off
-    
-    - How often team scores from (Level 1,2,3) while running a certain play with this player on the court vs off
-    - Also tracks how many possessions you run this play at least once. 
-        > Can pull play success rate by combining every lineups success rate when running this play
-
-    - Compare every individuals differential with some sort of visual.
-
-
-Defensive Stats Analyzed:
-
-    - How often opposite scores from (Level 1,2,3) against man with this player on the court vs off
-    - Opposite Team Field Goal % against man with this player on the court (Level 1,2,3) vs off
-
-    - How often opposite team scores from (Level 1,2,3) in transition with this player on the court vs off
-    - Opposite Team Field Goal % in transition with this player on the court (Level 1,2,3) vs off
-
-    - How often opposite team scores from (Level 1,2,3) against zone with this player on the court vs off
-    - Opposite Team Field Goal % against zone with this player on the court (Level 1,2,3) vs off
-
-
-
-Player Conditional Stats:
-
-    - Given a player, check the individual stats above (player1)
-        > Give another player (player2), see what player1's stats were with player2 on vs off the court
-            > Give every player1's on vs off differential (on - off) w/ that certain player2
-            > Whoever has the highest differential can be inferred to be most influenced by that player2
-            > Whoever has the lowest may also show negative relationships between players that maybe shouldn't be on the court at the same time
-            > Think of WHY these two might have a high correlation
-
-
-        > Do the same thing as above but with 2 players instead of 1.
-
-
-Lineup Stats:
-    - Given 5 players, compare all these stats to just see what specific lineups are the most efficient against certain defenses
-
+	What type of play and action does a team go against the most vs least?
+		How successful is their defense for each?
+		Where do they let up the most vs least shots?
+	        What’s their percentages allowed per type of shot?
+        How does this compare to the rest of the Liberty League?
+        Give order of who they played best to worst against defensively.
 
