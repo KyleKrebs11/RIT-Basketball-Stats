@@ -82,7 +82,7 @@ INSERT INTO playdescriptions (PlayType, Direction, Play_Action) VALUES
   ('Post', 'Left', 'Face Up'),
   ('Post', 'Left', 'Dribble'),
   ('Post', 'Middle', 'Face Up'),
-  ('Post', 'Middle', 'Dribble');
+  ('Post', 'Middle', 'Dribble'),
 
 -- Types of Cuts
   ('Cuts', NULL, 'Basket'),
@@ -91,7 +91,7 @@ INSERT INTO playdescriptions (PlayType, Direction, Play_Action) VALUES
   
 -- Transition plays
   ('Transition', NULL, 'Ball Handler'), 
-  ('Transision', NULL, 'Left Wing'),
+  ('Transition', NULL, 'Left Wing'),
   ('Transition', NULL, 'Right Wing'),
   ('Transition', NULL, 'Trailer'),
   ('Transition', NULL, 'Leak Outs'),
@@ -117,7 +117,7 @@ INSERT INTO playdescriptions (PlayType, Direction, Play_Action) VALUES
   ('P&R Roll Man', 'Left', 'Pop'),
   ('P&R Roll Man', 'Right', 'Pop'),
   ('P&R Roll Man', NULL, 'Pop'),
-  ('P&R Roll Man', NULL, 'Roll'),
+  ('P&R Roll Man', NULL, 'Roll');
 
 
 
