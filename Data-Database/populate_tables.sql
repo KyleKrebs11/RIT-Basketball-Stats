@@ -54,7 +54,6 @@ INSERT INTO opponents (Opponent) VALUES
 -- populate playdescriptions next 
 
 INSERT INTO playdescriptions (PlayType, Direction, Play_Action) VALUES
-
   -- Spot Ups 
   ('Spot Ups', 'Left','Drive'),
   ('Spot Ups', 'Right','Drive'),
@@ -78,7 +77,6 @@ INSERT INTO playdescriptions (PlayType, Direction, Play_Action) VALUES
   ('Iso', 'Left', NULL),
 
   -- Post Ups
-
   ('Post', 'Right', 'Face Up'),
   ('Post', 'Right', 'Dribble'),
   ('Post', 'Left', 'Face Up'),
@@ -86,6 +84,40 @@ INSERT INTO playdescriptions (PlayType, Direction, Play_Action) VALUES
   ('Post', 'Middle', 'Face Up'),
   ('Post', 'Middle', 'Dribble');
 
+-- Types of Cuts
+  ('Cuts', NULL, 'Basket'),
+  ('Cuts', NULL, 'Screen'),
+  ('Cuts', NULL, 'Flash'),
+  
+-- Transition plays
+  ('Transition', NULL, 'Ball Handler'), 
+  ('Transision', NULL, 'Left Wing'),
+  ('Transition', NULL, 'Right Wing'),
+  ('Transition', NULL, 'Trailer'),
+  ('Transition', NULL, 'Leak Outs'),
+  ('Transition', NULL, 'First Middle'),
+  
+-- Off Ball screens
+  ('Off Screens', 'Left', 'Straight'),
+  ('Off Screens', 'Left', 'Flare'),
+  ('Off Screens', 'Left', 'Curl'),
+  ('Off Screens', 'Right', 'Straight'),
+  ('Off Screens', 'Right', 'Flare'),
+  ('Off Screens', 'Right', 'Curl'),
+  
+-- hand offs
+  ('Hand Offs', 'Top', 'Dribble'),
+  ('Hand Offs', 'Top', 'Stationary'),
+  ('Hand Offs', 'Right', 'Dribble'),
+  ('Hand Offs', 'Right', 'Stationary'),
+  ('Hand Offs', 'Left', 'Dribble'),
+  ('Hand Offs', 'Left', 'Stationary'),
+  
+-- PnR Roll Man
+  ('P&R Roll Man', 'Left', 'Pop'),
+  ('P&R Roll Man', 'Right', 'Pop'),
+  ('P&R Roll Man', NULL, 'Pop'),
+  ('P&R Roll Man', NULL, 'Roll'),
 
 
 
