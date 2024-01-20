@@ -18,17 +18,17 @@ INSERT INTO shottypes (ShotType) VALUES
 ('To Basket'),
 ('Dribble Jumper'),
 ('No Dribble Jumper'),
---for post moves 
+-- for post moves 
 ('Hook Shot'),
 ('Drop Step');
 
 -- populate outcomes 
 INSERT INTO playoutcomes (Outcome) VALUES
--- M = make, m = miss
-('2pM'),
-('2pm'),
-('3pM'),
-('3pm'),
+-- Ma = make, mi = miss
+('2pmi'),
+('2pma'),
+('3pma'),
+('3pmi'),
 ('Foul'),
 ('Turnover');
 
