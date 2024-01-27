@@ -13,18 +13,16 @@ Kyle Krebs
 
 import pandas as pd
 import sys
+import os
 
 
 """
 process_csv: Processes the csv file
 
 """
-def process_csv(csv_file_path):
-    
-    #turn csv into pandas dataframe
-    df = pd.read_csv(csv_file_path)
+def process_plays(csv_file_path):
 
-    print(df)
+    return 0
 
 
 if __name__ == "__main__":
@@ -35,7 +33,13 @@ if __name__ == "__main__":
         sys.exit(1)
     
     #process csv files given 
-    for csv_path in sys.argv[1:]:
+    for csv_file in sys.argv[1:]:
         #Process each csv path
-        process_csv(csv_path)
+        file_path = os.path.join('game_csv', csv_file)
+
+        #turn csv into pandas dataframe
+        df = pd.read_csv(file_path)
+        
+        #process the plays
+        process_plays(df)
      
