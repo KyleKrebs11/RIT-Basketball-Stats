@@ -20,9 +20,36 @@ import os
 process_csv: Processes the csv file
 
 """
-def process_plays(csv_file_path):
+def process_plays(csv_df: pd.DataFrame):
+    final_df = pd.DataFrame()
 
-    return 0
+    # defining constraints of rows that we do not care about
+    constraints = get_constraints(csv_df)
+    
+    #turn csv into pandas dataframe
+
+
+def find_opponents():
+    pass
+
+def find_playoutcomes():
+    pass
+
+def find_site():
+    pass
+
+def find_shottypes():
+    pass
+
+def play_playtype():
+    pass
+
+def get_constraints(csv_df: pd.DataFrame):
+    constraint1 = csv_df['Result'] == "No Violation"
+    constraint2 = csv_df['Result'] == "Free Throw"
+    constraint3 = csv_df['Result'] == "Run Offense"
+    constraint4 = csv_df['Result'] == "Non Shooting"
+    return constraint1 & constraint2 & constraint3 & constraint4
 
 
 if __name__ == "__main__":
