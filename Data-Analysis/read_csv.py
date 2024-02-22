@@ -37,6 +37,8 @@ def process_plays(csv_df: pd.DataFrame):
     find_shottypes(filtered_df, final_df)
     find_playtype(filtered_df, final_df)
 
+    print(final_df.head)
+
 
 
 def finds_opponent_site(df: pd.DataFrame, final_df: pd.DataFrame):

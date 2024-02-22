@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: read_csv.py",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/read_csv.py",
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "stopOnEntry": false,
+        "pythonPath": "${config:python.pythonPath}",
+        "env": {},
+        "envFile": "${workspaceFolder}/.env",
+        "debugOptions": [
+          "WaitOnAbnormalExit",
+          "WaitOnNormalExit",
+          "RedirectOutput"
+        ]
+      }
+    ]
+  }
